@@ -5,7 +5,7 @@ import time
 import os
 # 填写获取到的token
 TOKEN=os.environ['TOKEN']
-js='window.localStorage.setItem("hduhelp_ncov_dailysign_token",'fc53cc9f-d43b-4fa9-9386-ef165fe020e9')'
+js='window.localStorage.setItem("hduhelp_ncov_dailysign_token","fc53cc9f-d43b-4fa9-9386-ef165fe020e9")'
 # 省 市 区 从上往下数第几个 如第1个,第2个 7 9 4表示浙江省杭州市江干区
 province=7
 city=9
