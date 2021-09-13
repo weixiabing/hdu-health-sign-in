@@ -35,7 +35,9 @@ jobs:
       - name: 'Install requirements'
         run: pip install -r ./Spider/requirements.txt
       - name: 'Working'
+        env:
+          TOKEN: ${{ secrets.token }}
         run: |
           sudo cp -p ./chrome/chromedriver /usr/bin/
           chmod -R 777 /usr/bin/chromedriver
-          python ./Spider/test.py
+          python ./Spider/test.py 
