@@ -10,6 +10,6 @@ chrome_options.add_argument('--disable-dev-shm-usage')
 chromedriver = "/usr/bin/chromedriver"
 os.environ["webdriver.chrome.driver"] = chromedriver
 driver = webdriver.Chrome(chrome_options=chrome_options,executable_path=chromedriver)
-driver.get("https://www.baidu.com")
+driver.get("https://jinjis.cn/index.php/archives/zheng-le-ge-zi-dong-hdu-jian-kang-da-ka-jie-jue-fang-an.html")
 print(driver.title)
 driver.quit()
