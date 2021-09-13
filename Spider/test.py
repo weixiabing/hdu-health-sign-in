@@ -11,7 +11,7 @@ province=7
 city=9
 area=4
 # 获取驱动路径
-DRIVER_PATH = './usr/bin/chromedriver'
+DRIVER_PATH = '/usr/bin/chromedriver'
 # 浏览器设置
 options = Options()
 options.add_argument('--no-sandbox')
