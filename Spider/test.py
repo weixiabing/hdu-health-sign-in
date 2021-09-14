@@ -5,7 +5,7 @@ import time
 import os
 # 填写获取到的token
 TOKEN=os.environ['TOKEN']
-js='window.sessionStorage.setItem("hduhelp_ncov_dailysign_token","3c07ebb9-7e9f-43d0-a801-c52f323df240")'
+#js='window.sessionStorage.setItem("hduhelp_ncov_dailysign_token","3c07ebb9-7e9f-43d0-a801-c52f323df240")'
 # 省 市 区 从上往下数第几个 如第1个,第2个 7 9 4表示浙江省杭州市江干区
 province=7
 city=9
@@ -26,7 +26,7 @@ browser.get("https://healthcheckin.hduhelp.com/")
 #窗口最大化
 browser.maximize_window()
 # 添加token
-browser.execute_script(js)
+#browser.execute_script(js)
 # 刷新浏览器
 browser.refresh()
 # 间隔时间太短会导致打卡失败 因为界面元素还没有加载出来
