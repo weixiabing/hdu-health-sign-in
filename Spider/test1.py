@@ -31,16 +31,16 @@ browser.refresh()
 # 间隔时间太短会导致打卡失败 因为界面元素还没有加载出来
 time.sleep(2)
 # 点击 确认打卡 按钮
-
-
+browser.find_element_by_class_name('.van-button.van-button--info.van-button--normal').click()
+time.sleep(1)
 # 点击弹出的 确认 按钮 因为之后才能填写位置信息
 browser.find_element_by_class_name('van-dialog__confirm').click()
 time.sleep(1)
 # 点击 确认 手动填写位置按钮
-browser.find_element_by_class_name('van-tag van-tag--warning').click()
+browser.find_element_by_class_name('van-field__control--right').click()
 time.sleep(1)
 # 获取滑动选择框
-pickers=browser.find_elements_by_class_name('van-field__control van-field__control--right')
+pickers=browser.find_elements_by_class_name('van-picker-column__wrapper')
 for i in range(province):
     # 依次点击 直到选择了对应城市
     pickers[0].find_elements_by_class_name('van-picker-column__item')[i].click()
@@ -53,10 +53,7 @@ for i in range(area):
 # 点击 确认 地区选择按钮
 browser.find_element_by_class_name('van-picker__confirm').click()
 time.sleep(1)
-# 第二针
-browser.driver.find_element_by_link_text('option-cell van-cell')[3].click()
 # 点击 确认打卡 按钮
-time.sleep(1)
 browser.find_element_by_css_selector('.van-button.van-button--info.van-button--normal').click()
 time.sleep(1)
 # 点击 确认负责 按钮
