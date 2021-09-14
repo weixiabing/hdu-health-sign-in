@@ -35,7 +35,7 @@ time.sleep(2)
 
 
 # 点击弹出的 确认 按钮 因为之后才能填写位置信息
-browser.find_element_by_class_name('van-dialog__confirm').click()
+#browser.find_element_by_class_name('van-dialog__confirm').click()
 time.sleep(1)
 # 点击 确认 手动填写位置按钮
 browser.find_element_by_class_name('van-tag van-tag--warning').click()
