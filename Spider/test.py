@@ -19,7 +19,7 @@ def main(username,password):
     driver = Chrome(executable_path=DRIVER_PATH, options=options)
     # 访问目标URL
     driver.get('https://api.hduhelp.com/login/direct/yiban?clientID=healthcheckin&redirect=https%3A%2F%2Fhealthcheckin.hduhelp.com%2F%23%2Fauth')
-    print(driver.page_source)
+    #print(driver.page_source)
     
     # 省 市 区 从上往下数第几个 如第1个,第2个 7 9 4表示浙江省杭州市江干区
     province=7
@@ -70,11 +70,16 @@ def main(username,password):
     driver.find_element_by_css_selector('.van-button.van-button--default.van-button--large.van-dialog__cancel').click()
     driver.save_screenshot("0001.png")  # 截图
     driver.close()
-    driver.quit() 
+    driver.quit()
+    print('恭喜！打卡成功')
+    #tg 推送功能
 if __name__ == "__main__":
     print(sys.argv)
     username = sys.argv[1]
     password = sys.argv[2]
-    
-    main(username, password)
-    
+    try:
+        main(username, password)
+    except selenium.common.exceptions.NoSuchElementException:
+        print('您已达过卡')
+    else:
+        print('检查账号密码或脚本已失效')
