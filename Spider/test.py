@@ -79,7 +79,5 @@ if __name__ == "__main__":
     password = sys.argv[2]
     try:
         main(username, password)
-    except selenium.common.exceptions.NoSuchElementException:
-        print('您已达过卡')
-    else:
-        print('检查账号密码或脚本已失效')
+    except:
+        print('检查账号密码或脚本已失效或您已达过卡')
