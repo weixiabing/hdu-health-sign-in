@@ -2,7 +2,7 @@ from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.options import Options
 import time
 import sys
-DRIVER_PATH = '/chrome/chromedriver'
+DRIVER_PATH = '/usr/bin/chromedriver'
 
 options = Options()
 options.add_argument('--no-sandbox')
