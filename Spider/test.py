@@ -58,7 +58,7 @@ def main(username,password):
     driver.find_element_by_css_selector('.oauth_check_login').click()
     
     #driver.find_element_by_id('btnOk').click()
-    time.sleep(2)
+    time.sleep(10)
     #重新定位
     driver.find_element_by_css_selector('.van-tag.van-tag--warning').click()
     time.sleep(2)
@@ -99,13 +99,13 @@ def main(username,password):
     #tg 推送功能
 if __name__ == "__main__":
     print(sys.argv)
-    username = sys.argv[1].split('&')
-    password = sys.argv[2].split('&')
-    print(username)
-    for i in range(len(username)):
-       try:
-           main(username[i], password[i])
-           post_tg('恭喜'+username[i]+'打卡成功')
-       except:
-           print('检查账号密码或脚本已失效或您已达过卡')
-           post_tg(username[i]+'打卡失败，检查账号密码或脚本已失效或您已达过卡')
+    username = sys.argv[1]
+    password = sys.argv[2]
+    main(username, password)
+    
+    '''try:
+        main(username, password)
+        post_tg('恭喜'+username[i]+'打卡成功')
+    except:
+        print('检查账号密码或脚本已失效或您已达过卡')
+        post_tg('检查账号密码或脚本已失效或您已达过卡')'''
