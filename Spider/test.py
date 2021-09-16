@@ -6,7 +6,7 @@ from requests import post
 """
 TG 消息推送
 """
-TG_TOKEN = '1958905191:AAHI_2HhtIpgGYb-nrCT3EUCKN9EGx4TsdA'
+TG_TOKEN = '1733404368:AAG-cKo9vxfuTpRL2bwHdK1blDyiOeDeRVg'
 CHAT_ID = '1691414685'
 
 DRIVER_PATH = '/usr/bin/chromedriver'
@@ -27,7 +27,7 @@ def post_tg(message):
         ('parse_mode', "Markdown"), #可选Html或Markdown
         ('disable_web_page_preview', "yes")
     )    
-    telegram_url = "https://api.telegram.org/bot" + TG_TOKEN + "/sendMessage"
+    telegram_url = "https://fancy-wildflower-f702.weixiabing.workers.dev/bot" + TG_TOKEN + "/sendMessage"
     telegram_req = post(telegram_url, params=params)
     telegram_status = telegram_req.status_code
     if telegram_status == 200:
@@ -99,10 +99,12 @@ def main(username,password):
     #tg 推送功能
 if __name__ == "__main__":
     print(sys.argv)
-    username = sys.argv[1]
-    password = sys.argv[2]
-    try:
-        main(username, password)
-        post_tg('你好，佰阅！') 
-    except:
-        print('检查账号密码或脚本已失效或您已达过卡')
+    username = sys.argv[1].split('&')
+    password = sys.argv[2].split('&')
+    for i in range(len(username)):
+       try:
+           main(username[i], password[i])
+           post_tg('恭喜'+username[i]+'打卡成功')
+       except:
+           print('检查账号密码或脚本已失效或您已达过卡')
+           post_tg('检查账号密码或脚本已失效或您已达过卡')
