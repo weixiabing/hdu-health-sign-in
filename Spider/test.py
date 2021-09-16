@@ -101,6 +101,7 @@ if __name__ == "__main__":
     print(sys.argv)
     username = sys.argv[1].split('&')
     password = sys.argv[2].split('&')
+    print('username')
     for i in range(len(username)):
        try:
            main(username[i], password[i])
