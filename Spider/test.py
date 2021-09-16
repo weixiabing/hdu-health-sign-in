@@ -99,8 +99,8 @@ def main(username,password):
     #tg 推送功能
 if __name__ == "__main__":
     print(sys.argv)
-    '''username = sys.argv[0]
-    password = sys.argv[1]
+    '''username = sys.argv[1]
+    password = sys.argv[2]
     
     
     try:
