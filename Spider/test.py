@@ -108,4 +108,4 @@ if __name__ == "__main__":
            post_tg('恭喜'+username[i]+'打卡成功')
        except:
            print('检查账号密码或脚本已失效或您已达过卡')
-           post_tg('检查账号密码或脚本已失效或您已达过卡')
+           post_tg(username[i]+'打卡失败，检查账号密码或脚本已失效或您已达过卡')
