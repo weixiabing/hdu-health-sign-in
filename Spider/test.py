@@ -1,7 +1,7 @@
 from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.options import Options
 import time
-import sys
+import os
 from requests import post
 """
 TG 消息推送
@@ -98,14 +98,14 @@ def main(username,password):
     print('恭喜！打卡成功')
     #tg 推送功能
 if __name__ == "__main__":
-    print(sys.argv)
-    username = sys.argv[1]
-    password = sys.argv[2]
-    main(username, password)
+    username= os.environ["USERNAME"].split('&')
+    password= os.environ["PASSWORD"].split('&')
     
-    '''try:
-        main(username, password)
-        post_tg('恭喜'+username[i]+'打卡成功')
-    except:
-        print('检查账号密码或脚本已失效或您已达过卡')
-        post_tg('检查账号密码或脚本已失效或您已达过卡')'''
+    #main(username, password)
+    for i in range(len(username)):
+        try:
+            main(username[i], password[i])
+            post_tg('恭喜'+username[i]+'打卡成功')
+        except Exception:
+            print('username[i]检查账号密码或脚本已失效或您已达过卡')
+            post_tg('username[i]检查账号密码或脚本已失效或您已达过卡')
