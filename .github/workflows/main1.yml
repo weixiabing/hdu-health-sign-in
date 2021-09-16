@@ -36,9 +36,9 @@ jobs:
         run: pip install -r ./Spider/requirements.txt
       - name: 'Working'
         env:
-          USERNAME: ${{ secrets.USERNAME1 }}
-          PASSWORD: ${{ secrets.PASSWORD1 }}
+          USERNAME1: ${{ secrets.USERNAME1 }}
+          PASSWORD1: ${{ secrets.PASSWORD1 }}
         run: |
           sudo cp -p ./chrome/chromedriver /usr/bin/
           chmod -R 777 /usr/bin/chromedriver
-          python ./Spider/test.py ${USERNAME} ${PASSWORD} 
+          python ./Spider/test.py ${USERNAME1} ${PASSWORD1} 
