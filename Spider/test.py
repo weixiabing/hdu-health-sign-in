@@ -58,7 +58,7 @@ def main(username,password):
     driver.find_element_by_css_selector('.oauth_check_login').click()
     
     #driver.find_element_by_id('btnOk').click()
-    time.sleep(2)
+    time.sleep(10)
     #重新定位
     driver.find_element_by_css_selector('.van-tag.van-tag--warning').click()
     time.sleep(2)
