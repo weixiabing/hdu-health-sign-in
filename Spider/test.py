@@ -2,6 +2,13 @@ from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.options import Options
 import time
 import sys
+from requests import post
+"""
+TG 消息推送
+"""
+TG_TOKEN = '1958905191:AAHI_2HhtIpgGYb-nrCT3EUCKN9EGx4TsdA'
+CHAT_ID = '1691414685'
+
 DRIVER_PATH = '/usr/bin/chromedriver'
 
 options = Options()
@@ -10,6 +17,23 @@ options.add_argument('--headless')  # 无头参数
 options.add_argument('--disable-gpu')
     #换成微信浏览器ua
 options.add_argument('--user-agent=Mozilla/5.0 (Linux; Android 11; Redmi K30 Pro Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.72 MQQBrowser/6.2 TBS/045811 Mobile Safari/537.36 MMWEBID/8641 MicroMessenger/8.0.11.1980(0x28000B51) Process/tools WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64')
+
+def post_tg(message):
+    telegram_message = f"{message}"
+               
+    params = (
+        ('chat_id', CHAT_ID),
+        ('text', telegram_message),
+        ('parse_mode', "Markdown"), #可选Html或Markdown
+        ('disable_web_page_preview', "yes")
+    )    
+    telegram_url = "https://api.telegram.org/bot" + TG_TOKEN + "/sendMessage"
+    telegram_req = post(telegram_url, params=params)
+    telegram_status = telegram_req.status_code
+    if telegram_status == 200:
+        print(f"INFO: Telegram Message sent")
+    else:
+        print("Telegram Error")
 def main(username,password):
     # 设置浏览器
   
@@ -79,5 +103,6 @@ if __name__ == "__main__":
     password = sys.argv[2]
     try:
         main(username, password)
+        post_tg('你好，佰阅！') 
     except:
         print('检查账号密码或脚本已失效或您已达过卡')
