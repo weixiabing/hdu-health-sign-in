@@ -106,6 +106,6 @@ if __name__ == "__main__":
        try:
            main(username[i], password[i])
            post_tg('恭喜'+username[i]+'打卡成功')
-       except:
+       except NoSuchElementException:
            print('检查账号密码或脚本已失效或您已达过卡')
            post_tg('检查账号密码或脚本已失效或您已达过卡')
