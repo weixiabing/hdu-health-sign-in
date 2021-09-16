@@ -107,5 +107,5 @@ if __name__ == "__main__":
             main(username[i], password[i])
             post_tg('恭喜'+username[i]+'打卡成功')
         except Exception:
-            print('username[i]检查账号密码或脚本已失效或您已达过卡')
-            post_tg('username[i]检查账号密码或脚本已失效或您已达过卡')
+            print(username[i]+'检查账号密码或脚本已失效或您已达过卡')
+            post_tg(username[i]+'检查账号密码或脚本已失效或您已达过卡')
