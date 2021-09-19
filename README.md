@@ -1,4 +1,5 @@
 # hdu-health-sign-in
+# 觉得好用的麻烦给个star
 + 杭电健康打卡脚本github action食用 简单方便
 
 + settings-secrets添加USERNAME和PASSWORD(即为易班app的登陆账号(账号为手机号)密码)
