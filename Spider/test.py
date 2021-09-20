@@ -6,9 +6,6 @@ from requests import post
 """
 TG 消息推送
 """
-TG_TOKEN = '1733404368:AAESvJoteL8Ucyy_RPitfLh1kdYsp92EL_M'
-CHAT_ID = '1691414685'
-
 DRIVER_PATH = '/usr/bin/chromedriver'
 
 options = Options()
@@ -100,7 +97,8 @@ def main(username,password):
 if __name__ == "__main__":
     username= os.environ["USERNAME"].split('&')
     password= os.environ["PASSWORD"].split('&')
-    
+    TG_TOKEN= os.environ["TG_TOKEN"]
+    CHAT_ID= os.environ["CHAT_ID"]
     #main(username, password)
     for i in range(len(username)):
         try:

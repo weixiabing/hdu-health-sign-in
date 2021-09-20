@@ -38,6 +38,8 @@ jobs:
         env:
           USERNAME: ${{ secrets.USERNAME }}
           PASSWORD: ${{ secrets.PASSWORD }}
+          TG_TOKEN: ${{ secrets.TG_TOKEN }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
         run: |
           sudo cp -p ./chrome/chromedriver /usr/bin/
           chmod -R 777 /usr/bin/chromedriver
