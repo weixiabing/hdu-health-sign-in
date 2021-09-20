@@ -6,7 +6,7 @@ from requests import post
 """
 TG 消息推送
 """
-TG_TOKEN = '1733404368:AAG-cKo9vxfuTpRL2bwHdK1blDyiOeDeRVg'
+TG_TOKEN = '1733404368:AAESvJoteL8Ucyy_RPitfLh1kdYsp92EL_M'
 CHAT_ID = '1691414685'
 
 DRIVER_PATH = '/usr/bin/chromedriver'
