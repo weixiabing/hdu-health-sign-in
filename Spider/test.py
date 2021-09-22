@@ -3,6 +3,8 @@ from selenium.webdriver.chrome.options import Options
 import time
 import os
 from requests import post
+import sys
+import log
 """
 TG 消息推送
 """
@@ -104,6 +106,12 @@ if __name__ == "__main__":
         try:
             main(username[i], password[i])
             post_tg('恭喜'+username[i]+'打卡成功')
-        except Exception:
+        except Exception as e:
             print('账号'+str(i)+'检查账号密码或脚本已失效或您已达过卡')
             post_tg(username[i]+'检查账号密码或脚本已失效或您已达过卡')
+            filename = sys._getframe().f_code.co_filename
+            function = sys._getframe().f_code.co_name
+            lineno = sys._getframe().f_lineno
+            exception = str(e)
+            log.printing(filename, function, lineno, exception)
+        

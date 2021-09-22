@@ -44,3 +44,12 @@ jobs:
           sudo cp -p ./chrome/chromedriver /usr/bin/
           chmod -R 777 /usr/bin/chromedriver
           python ./Spider/test.py  
+      - name: Commit and push if changed   # 更新README.md
+        run: |
+          git diff
+          git config --global user.email "weixiabing@hotmail.com"
+          git config --global user.name "weixiabing"
+          git add .
+          git commit -m "Github Action Auto Updated"
+          git push
+          
