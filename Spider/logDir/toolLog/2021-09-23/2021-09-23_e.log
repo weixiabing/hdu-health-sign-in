@@ -16,3 +16,12 @@
 2021-09-23 11:03:36,921 log.py printing INFO ./Spider/test.py   Function: <module>  Line: 114  Exception: Message: no such element: Unable to locate element: {"method":"css selector","selector":".van-cell.van-cell--clickable.van-cell--required.van-field"}
   (Session info: headless chrome=93.0.4577.82)
 
+2021-09-23 23:04:41,114 log.py printing INFO ./Spider/test.py   Function: <module>  Line: 114  Exception: Message: no such element: Unable to locate element: {"method":"css selector","selector":".van-tag.van-tag--warning"}
+  (Session info: headless chrome=93.0.4577.82)
+
+2021-09-23 23:05:02,329 log.py printing INFO ./Spider/test.py   Function: <module>  Line: 114  Exception: Message: no such element: Unable to locate element: {"method":"css selector","selector":".van-tag.van-tag--warning"}
+  (Session info: headless chrome=93.0.4577.82)
+
+2021-09-23 23:05:02,329 log.py printing INFO ./Spider/test.py   Function: <module>  Line: 114  Exception: Message: no such element: Unable to locate element: {"method":"css selector","selector":".van-tag.van-tag--warning"}
+  (Session info: headless chrome=93.0.4577.82)
+
