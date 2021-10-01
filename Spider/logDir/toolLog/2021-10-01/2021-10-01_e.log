@@ -16,3 +16,21 @@
 2021-10-01 10:04:27,966 log.py printing INFO ./Spider/test.py   Function: <module>  Line: 114  Exception: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="oauth_uname_m"]"}
   (Session info: headless chrome=94.0.4606.61)
 
+2021-10-01 10:07:03,431 log.py printing INFO ./Spider/test.py   Function: <module>  Line: 114  Exception: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="oauth_uname_m"]"}
+  (Session info: headless chrome=94.0.4606.61)
+
+2021-10-01 10:07:10,077 log.py printing INFO ./Spider/test.py   Function: <module>  Line: 114  Exception: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="oauth_uname_m"]"}
+  (Session info: headless chrome=94.0.4606.61)
+
+2021-10-01 10:07:10,077 log.py printing INFO ./Spider/test.py   Function: <module>  Line: 114  Exception: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="oauth_uname_m"]"}
+  (Session info: headless chrome=94.0.4606.61)
+
+2021-10-01 10:07:17,815 log.py printing INFO ./Spider/test.py   Function: <module>  Line: 114  Exception: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="oauth_uname_m"]"}
+  (Session info: headless chrome=94.0.4606.61)
+
+2021-10-01 10:07:17,815 log.py printing INFO ./Spider/test.py   Function: <module>  Line: 114  Exception: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="oauth_uname_m"]"}
+  (Session info: headless chrome=94.0.4606.61)
+
+2021-10-01 10:07:17,815 log.py printing INFO ./Spider/test.py   Function: <module>  Line: 114  Exception: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="oauth_uname_m"]"}
+  (Session info: headless chrome=94.0.4606.61)
+
