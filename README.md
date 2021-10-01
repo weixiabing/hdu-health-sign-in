@@ -8,7 +8,8 @@
 + 每天7点自动打卡(若杭电助手还是发来打卡通知说明打卡失效(若打卡失效请及时联系作者)或账号错误)
 + tg通知功能
 + 新增error记录功能
-+ 本地部署版即将上线
++ 本地部署版[releases](https://github.com/weixiabing/hdu-health-sign-in/releases)
+
 
 
 
