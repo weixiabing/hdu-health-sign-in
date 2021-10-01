@@ -51,8 +51,8 @@ def main(username,password):
     
     time.sleep(2)
     #登录确认
-    driver.find_element_by_id('oauth_uname_w').send_keys(username)
-    driver.find_element_by_id('oauth_upwd_w').send_keys(password)
+    driver.find_element_by_id('oauth_uname_m').send_keys(username)
+    driver.find_element_by_id('oauth_upwd_m').send_keys(password)
     time.sleep(2)
     driver.find_element_by_css_selector('.oauth_check_login').click()
     
