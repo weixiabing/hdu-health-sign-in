@@ -16,3 +16,21 @@
 2021-10-02 02:14:54,339 log.py printing INFO ./Spider/test.py   Function: <module>  Line: 114  Exception: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="oauth_uname_m"]"}
   (Session info: headless chrome=94.0.4606.61)
 
+2021-10-02 02:20:49,558 log.py printing INFO ./Spider/test.py   Function: <module>  Line: 114  Exception: Message: no such element: Unable to locate element: {"method":"css selector","selector":".van-cell.van-cell--clickable.van-cell--required.van-field"}
+  (Session info: headless chrome=94.0.4606.61)
+
+2021-10-02 02:21:21,549 log.py printing INFO ./Spider/test.py   Function: <module>  Line: 114  Exception: Message: no such element: Unable to locate element: {"method":"css selector","selector":".van-cell.van-cell--clickable.van-cell--required.van-field"}
+  (Session info: headless chrome=94.0.4606.61)
+
+2021-10-02 02:21:21,549 log.py printing INFO ./Spider/test.py   Function: <module>  Line: 114  Exception: Message: no such element: Unable to locate element: {"method":"css selector","selector":".van-cell.van-cell--clickable.van-cell--required.van-field"}
+  (Session info: headless chrome=94.0.4606.61)
+
+2021-10-02 02:21:56,790 log.py printing INFO ./Spider/test.py   Function: <module>  Line: 114  Exception: Message: element not interactable
+  (Session info: headless chrome=94.0.4606.61)
+
+2021-10-02 02:21:56,790 log.py printing INFO ./Spider/test.py   Function: <module>  Line: 114  Exception: Message: element not interactable
+  (Session info: headless chrome=94.0.4606.61)
+
+2021-10-02 02:21:56,790 log.py printing INFO ./Spider/test.py   Function: <module>  Line: 114  Exception: Message: element not interactable
+  (Session info: headless chrome=94.0.4606.61)
+
