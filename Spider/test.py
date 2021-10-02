@@ -42,7 +42,7 @@ def main(username,password):
     driver = Chrome(executable_path=DRIVER_PATH, options=options)
     # 访问目标URL
     driver.get('https://api.hduhelp.com/login/direct/yiban?clientID=healthcheckin&redirect=https%3A%2F%2Fhealthcheckin.hduhelp.com%2F%23%2Fauth')
-    #print(driver.page_source)
+    print(driver.page_source)
     
     # 省 市 区 从上往下数第几个 如第1个,第2个 7 9 4表示浙江省杭州市江干区
     province=7
