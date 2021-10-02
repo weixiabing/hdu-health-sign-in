@@ -42,7 +42,7 @@ def main(username,password):
     driver = Chrome(executable_path=DRIVER_PATH, options=options)
     # 访问目标URL
     driver.get('https://api.hduhelp.com/login/direct/yiban?clientID=healthcheckin&redirect=https%3A%2F%2Fhealthcheckin.hduhelp.com%2F%23%2Fauth')
-    print(driver.page_source)
+    #print(driver.page_source)
     
     # 省 市 区 从上往下数第几个 如第1个,第2个 7 9 4表示浙江省杭州市江干区
     province=7
@@ -51,8 +51,8 @@ def main(username,password):
     
     time.sleep(2)
     #登录确认
-    driver.find_element_by_id('oauth_uname_m').send_keys(username)
-    driver.find_element_by_id('oauth_upwd_m').send_keys(password)
+    driver.find_element_by_id('oauth_uname_w').send_keys(username)
+    driver.find_element_by_id('oauth_upwd_w').send_keys(password)
     time.sleep(2)
     driver.find_element_by_css_selector('.oauth_check_login').click()
     
