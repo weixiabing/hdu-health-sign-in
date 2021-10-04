@@ -1,0 +1,18 @@
+2021-10-04 11:02:56,956 log.py printing INFO ./Spider/test.py   Function: <module>  Line: 114  Exception: Message: no such element: Unable to locate element: {"method":"css selector","selector":".van-cell.van-cell--clickable.van-cell--required.van-field"}
+  (Session info: headless chrome=94.0.4606.61)
+
+2021-10-04 11:03:25,181 log.py printing INFO ./Spider/test.py   Function: <module>  Line: 114  Exception: Message: no such element: Unable to locate element: {"method":"css selector","selector":".van-cell.van-cell--clickable.van-cell--required.van-field"}
+  (Session info: headless chrome=94.0.4606.61)
+
+2021-10-04 11:03:25,181 log.py printing INFO ./Spider/test.py   Function: <module>  Line: 114  Exception: Message: no such element: Unable to locate element: {"method":"css selector","selector":".van-cell.van-cell--clickable.van-cell--required.van-field"}
+  (Session info: headless chrome=94.0.4606.61)
+
+2021-10-04 11:03:54,458 log.py printing INFO ./Spider/test.py   Function: <module>  Line: 114  Exception: Message: no such element: Unable to locate element: {"method":"css selector","selector":".van-cell.van-cell--clickable.van-cell--required.van-field"}
+  (Session info: headless chrome=94.0.4606.61)
+
+2021-10-04 11:03:54,458 log.py printing INFO ./Spider/test.py   Function: <module>  Line: 114  Exception: Message: no such element: Unable to locate element: {"method":"css selector","selector":".van-cell.van-cell--clickable.van-cell--required.van-field"}
+  (Session info: headless chrome=94.0.4606.61)
+
+2021-10-04 11:03:54,458 log.py printing INFO ./Spider/test.py   Function: <module>  Line: 114  Exception: Message: no such element: Unable to locate element: {"method":"css selector","selector":".van-cell.van-cell--clickable.van-cell--required.van-field"}
+  (Session info: headless chrome=94.0.4606.61)
+
